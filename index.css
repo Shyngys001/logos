@@ -1,11 +1,15 @@
 body{
-    display: flex;
-    padding: 10%;
+    display: block;
     background-color: blue;
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: space-around;
 }
+
+div{
+    margin-top: 5%;
+}
+
 .yandex{
     background-color: rgb(190, 92, 92);
     width: 300px;
