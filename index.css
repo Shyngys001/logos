@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    padding: 10%;
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+}
+.yandex{
+    background-color: rgb(190, 92, 92);
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient(to top, rgb(255, 221, 0), rgb(255, 221, 0)), linear-gradient(to bottom left, rgb(255, 255, 255), rgb(255, 255, 255)), linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 0));
+    background-size: 100% 50%, 50% 66.66%, 50% 66.66%;
+    background-repeat: no-repeat;
+    background-position: top center, bottom left, bottom right;
+}
+
+.beeline{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: aqua;
+    background-image: linear-gradient(to top, black, black), linear-gradient(rgb(244, 182, 13),rgb(255, 217, 0)), linear-gradient(black, black), linear-gradient(rgb(244, 182, 13),rgb(255, 226, 63)), linear-gradient(black, black);
+    background-size: 100% 20%, 100% 25%, 100% 40%, 100% 50%, 100% 20%; 
+    background-repeat: no-repeat;
+    background-position: top, center 20%, center 40%, center 60%, center 100%;
+}
+
+.travel{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.travel::before, .travel::after{
+    width: 50px;
+    border-radius: 10px;
+    height: 100px;
+    background-color: bisque;
+    content: '';
+    position: absolute;
+
+}
+
+.travel::after{
+    right: 20%;
+    top: 20%;
+    background-color: rgb(86, 89, 255);
+    position: absolute;
+    height: 70px;
+}
+
+.travel::before{
+    left: 20%;
+    overflow: hidden;
+    background-color: rgb(86, 89, 255);
+    height: 120px;
+}
